@@ -1,1 +1,1 @@
-pwd prints working directory
+pwd prints the working directory
