@@ -4,3 +4,4 @@
 3. A script that changes the ownerof the file hello to the user betty
 4. A script that creates an empty file called hello
 5. A script that adds execute permission to the owner of the file hello
+6. A script that adds execute permission to the owner and the owner of the group, and read permission to the other users, from the file hello. hello is in the working directory
