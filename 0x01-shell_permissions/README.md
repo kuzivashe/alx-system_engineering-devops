@@ -5,3 +5,4 @@
 4. A script that creates an empty file called hello
 5. A script that adds execute permission to the owner of the file hello
 6. A script that adds execute permission to the owner and the owner of the group, and read permission to the other users, from the file hello. hello is in the working directory
+7. A script that adds execution permission to the owner, the group owner and other users to the file hello. hello is in the working directory. you are not allowed to use commas for this script.
