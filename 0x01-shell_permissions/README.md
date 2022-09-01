@@ -7,3 +7,4 @@
 6. A script that adds execute permission to the owner and the owner of the group, and read permission to the other users, from the file hello. hello is in the working directory
 7. A script that adds execution permission to the owner, the group owner and other users to the file hello. hello is in the working directory. you are not allowed to use commas for this script.
 8. A script that sets the permissions to the file hello as follows: Owner: no permission at all; Group: no permission at all; Other users: all the permissions
+9. A script that sets the mode of the file hello to this: -rwxr-x-wx etc
