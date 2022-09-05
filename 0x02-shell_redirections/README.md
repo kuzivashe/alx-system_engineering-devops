@@ -9,3 +9,4 @@ Display the last 10 lines of /etc/passwd
 9. Write a script that duplicates the last line of the file iacta. The file iacta is in the working directory.
 10. Write a script that deletes all the regular files (not the directories) witha .js extension that are present in the current directory and all its subfolders.
 11. Write a script that counts the number of directories and subdirectories in the current directory. The current and parent directories should not be taken into account. Hidden directories should be counted.
+12. Create a script that displays 10 newest files in the current directory. One file per line. Sorted from newest to oldest.
