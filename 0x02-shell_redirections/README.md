@@ -7,3 +7,4 @@ Display the last 10 lines of /etc/passwd
 7. Write a shell script a file named exactly ... containing the text best school ending by a new line
 8. Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should overwritten. If the file ls_cwd_content does not exist create it.
 9. Write a script that duplicates the last line of the file iacta. The file iacta is in the working directory.
+10. Write a script that deletes all the regular files (not the directories) witha .js extension that are present in the current directory and all its subfolders.
