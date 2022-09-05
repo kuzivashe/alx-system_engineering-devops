@@ -11,3 +11,4 @@ Display the last 10 lines of /etc/passwd
 11. Write a script that counts the number of directories and subdirectories in the current directory. The current and parent directories should not be taken into account. Hidden directories should be counted.
 12. Create a script that displays 10 newest files in the current directory. One file per line. Sorted from newest to oldest.
 13. Create a script that takes a list of words as input and prints only words that appear exactly once. Input format: one line one word. Output format: one line one word. Words should be sorted.
+14. Display lines containing the pattern "root" from the file /etc/passwd.
