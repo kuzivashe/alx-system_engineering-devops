@@ -12,3 +12,4 @@ Display the last 10 lines of /etc/passwd
 12. Create a script that displays 10 newest files in the current directory. One file per line. Sorted from newest to oldest.
 13. Create a script that takes a list of words as input and prints only words that appear exactly once. Input format: one line one word. Output format: one line one word. Words should be sorted.
 14. Display lines containing the pattern "root" from the file /etc/passwd.
+15. Display the number of lines that contain the pattern "bin" in the file /etc/passwd
