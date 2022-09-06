@@ -15,3 +15,4 @@ Display the last 10 lines of /etc/passwd
 15. Display the number of lines that contain the pattern "bin" in the file /etc/passwd
 16. Display lines containing the pattern "root" and the 3 lines after them in the file /etc/passwd
 16. Display all the lines in the file /etc/passwd that do not contain the pattern "bin"
+18. Display all the lines of the file /etc/ssh/ssh_config starting with a letter. Include capital letters as well.
