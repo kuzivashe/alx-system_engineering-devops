@@ -20,3 +20,5 @@ Display the last 10 lines of /etc/passwd
 20. Create a script that removes all letters c and C from input.
 21. Write a script that reverse its input.
 22. Write a script that displays all users and their home directories, sorted by users. Based on the /etc/passwd file.
+Re-attempt of 7.
+Reattempt of 7
