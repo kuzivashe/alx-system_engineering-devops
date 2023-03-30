@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# based on https://www.liquidweb.com/kb/redirecting-urls-using-nginx/
+# HTTP 301 move permanent
+# install the Nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+# enable pass of traffic in the port 80
+sudo ufw allow 'Nginx HTTP'
+#copy the content in the index.html file tee cuz > or >> dont work
+echo "Hello World" |sudo tee /var/www/html/index.html
+# adding a new line inside /etc/nginx/sites-available/default
+var="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com/channel/UC-QtMoPv-9g1vD7PoyKQtEw permanent;"
+cd /etc/nginx/sites-available/
+sudo sed -i "s/server_name _;/$var/" default
+cd -
+# restart Nginx service for get changes
+sudo service nginx restart

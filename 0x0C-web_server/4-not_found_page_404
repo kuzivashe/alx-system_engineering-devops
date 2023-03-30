@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-to-use-custom-error-pages-on-ubuntu-14-04
+# configure a new nginx web server
+# install the Nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+# enable pass of traffic in the port 80
+sudo ufw allow 'Nginx HTTP'
+# redirect
+var="server_name _;\n\trewrite ^\/redirect_me https:\/\/https://www.youtube.com/channel/UC-QtMoPv-9g1vD7PoyKQtEw permanent;"
+cd /etc/nginx/sites-available/
+sudo sed -i "s/server_name _;/$var/" default
+cd -
+# adding message to 404 not found
+echo -e "Ceci n'est pas une page\n" | sudo tee /var/www/html/404_page.html
+# adding a new line inside /etc/nginx/sites-available/default
+var404="server_name _;\n\terror_page 404 \/404_page.html;\n\tlocation = \/404_page.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+cd /etc/nginx/sites-available/
+sudo sed -i "s/server_name _;/$var404/" default
+cd -
+# restart Nginx service for get changes
+sudo service nginx restart
