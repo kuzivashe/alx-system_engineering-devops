@@ -6,6 +6,6 @@ apt-get -y install nginx
 # enable pass of traffic in the port 80
 ufw allow 'Nginx HTTP'
 #copy the content in the index.html file tee cuz > or >> dont work
-echo "Hello World" > /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 # start Nginx service
 service nginx start
