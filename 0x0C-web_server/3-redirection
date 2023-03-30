@@ -13,5 +13,5 @@ var="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com/channel/
 cd /etc/nginx/sites-available/
 sudo sed -i "s/server_name _;/$var/" default
 cd -
-# restart Nginx service for get changes
+# restart Nginx service for get changes.
 sudo service nginx restart
