@@ -7,7 +7,7 @@ sudo apt-get -y install nginx
 # enable pass of traffic in the port 80
 sudo ufw allow 'Nginx HTTP'
 # redirect
-var="server_name _;\n\trewrite ^\/redirect_me https:\/\/https://www.youtube.com/channel/UC-QtMoPv-9g1vD7PoyKQtEw permanent;"
+var="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com/channel/UC-QtMoPv-9g1vD7PoyKQtEw permanent;"
 cd /etc/nginx/sites-available/
 sudo sed -i "s/server_name _;/$var/" default
 cd -
