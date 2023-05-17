@@ -1,1 +1,4 @@
-
+#!/usr/bin/env bash
+# creating new private and public key
+#with name holberton 4096 bits and pass betty
+ssh-keygen -f school -b 4096 -N betty
