@@ -2,7 +2,6 @@
 """
 0-subs
 """
-import sys
 
 def number_of_subscribers(subreddit):
     """this function calls the reddit api to get the number of subscribers
