@@ -14,7 +14,7 @@ def top_ten(subreddit):
     # for data of listing endpoints
 
     API = 'https://www.reddit.com/'
-    req = requests.get('{}/req/{}/hot.json'.format(API, subreddit),
+    req = requests.get('{}/r/{}/hot.json'.format(API, subreddit),
                        headers={'user-agent': 'Customer user'},
                        params={'limit': 10},
                        allow_redirects=False)

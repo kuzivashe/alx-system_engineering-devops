@@ -12,13 +12,13 @@ def recurse(subreddit, hot_list=[], next=None, count=0):
 
     if count == 0:
         API = 'https://www.reddit.com/'
-        req = requests.get('{}/req/{}/hot.json'.format(API, subreddit),
+        req = requests.get('{}/r/{}/hot.json'.format(API, subreddit),
                            headers={'user-agent': 'Custom user'},
                            allow_redirects=False)
         
     else:
         API = 'https://www.reddit.com/'
-        req = requests.get('{}/req/{}/hot.json'.format(API, subreddit),
+        req = requests.get('{}/r/{}/hot.json'.format(API, subreddit),
                            headers={'user-agent': 'Custom user'},
                            params={'after': next},
                            allow_redirects=False)

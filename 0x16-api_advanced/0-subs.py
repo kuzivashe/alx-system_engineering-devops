@@ -14,7 +14,7 @@ def number_of_subscribers(subreddit):
     # /api/me.json call or response is where the modhashes is obtained 
     # for data of listing endpoints
     API = 'https://www.reddit.com/'
-    req = requests.get('{}/req/{}/about.json'.format(API, subreddit),
+    req = requests.get('{}/r/{}/about.json'.format(API, subreddit),
                        headers={'user-agent': 'Custom user'},
                        allow_redirects=False)
     
