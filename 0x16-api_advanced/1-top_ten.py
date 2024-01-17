@@ -3,6 +3,7 @@
 1-top_ten
 """
 
+
 def top_ten(subreddit):
     """ this function calls the reddit api to get
     the top 10 in a specific topic
@@ -10,7 +11,7 @@ def top_ten(subreddit):
     import requests
     # Reddit API:
     # Modhash API is a token required by reddit API to help prevent CSRF
-    # /api/me.json call or response is where the modhashes is obtained 
+    # /api/me.json call or response is where the modhashes is obtained
     # for data of listing endpoints
 
     API = 'https://www.reddit.com/'
@@ -18,12 +19,12 @@ def top_ten(subreddit):
                        headers={'user-agent': 'Customer user'},
                        params={'limit': 10},
                        allow_redirects=False)
-    
+
     # incase there is an invalid subreddit
     if req.status_code != 200:
         print(None)
         return(None)
-    
+
     # if successful
     req = req.json()
     # using the hot posts
